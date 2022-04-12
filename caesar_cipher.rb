@@ -10,5 +10,5 @@ end
 
 def caesar_cipher(string, shift)
   cipher = string.each_char.map { |char| shift_character(char, shift) }.join
-  puts cipher
+  cipher
 end

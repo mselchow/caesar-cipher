@@ -1,4 +1,10 @@
 def substrings(str, substr_arr)
-    # Search str for occurrences of values in substr_arr
-    # Return hash of each substr and number of times found
+    result = Hash.new()
+    substr_arr.each do |substr|
+        count = str.downcase.scan(substr).count
+        if count > 0
+            result[substr] = count
+        end
+    end
+    result
 end

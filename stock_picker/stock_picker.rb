@@ -18,4 +18,6 @@ def stock_picker(stock_prices)
       end
     end
   end
+
+  [buy_date, sell_date]
 end
